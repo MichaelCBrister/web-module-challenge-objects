@@ -49,8 +49,14 @@ const reviews = [{name: "Daniela", rating: 5, feedback:"Beautiful atmosphere and
 console.log(reviews[5].feedback)
 
 /* Task 4: Add a new rating with your (fictitious) opinions of the restaurant in the same format as the reviews above. */
-
-
+function createReview(name, rating, feedback) {
+  var myReview = {};
+  myReview.name = name;
+  myReview.rating = rating;
+  myReview.feedback = feedback;
+  reviews.push(myReview);
+}
+createReview("Michael", 5, "Wrote this review just to get a $5 dscount.")
 /* Task 5: Add the following feedback to Reyna's rating - "this place is chill with really cool people, great for getting work done on weekdays"*/
 reviews[7].feedback = "this place is chill with really cool people, great for getting work done on weekdays";
 /*  Task 6: Write a function to return a review based on the index of the review in the array.
