@@ -51,8 +51,8 @@ console.log(reviews[5].feedback)
 /* Task 4: Add a new rating with your (fictitious) opinions of the restaurant in the same format as the reviews above. */
 
 
-/* Task 5: Add the following feedback to Reyna's rating - "this place is chill with really cool people, great for getting work done on weekdays"
-
+/* Task 5: Add the following feedback to Reyna's rating - "this place is chill with really cool people, great for getting work done on weekdays"*/
+reviews[7].feedback = "this place is chill with really cool people, great for getting work done on weekdays";
 /*  Task 6: Write a function to return a review based on the index of the review in the array.
 
  Your function should take two arguments:
@@ -80,9 +80,9 @@ and should return a string in the format `name} gave the restaurant a {rating}, 
 
 For example, if getLastReview is invoked passing the reviews array it will return `Reyna gave the restaurant a 3.5 star review and their feedback was: "this place is chill with really cool people, great for getting work done on weekdays"`.
 */
-function getLastReview() {
-  console.log(`${reviews[reviews.length -1].name} gave the restaurant a ${reviews[reviews.length -1].rating} and their feedback was : ${reviews[reviews.length -1].feedback}`);
-} 
+function getLastReview(arr) {
+  console.log(`${arr[arr.length -1].name} gave the restaurant a ${arr[arr.length -1].rating} and their feedback was : ${arr[arr.length -1].feedback}`);
+}
 
 
 ///////////////🍔☕️🍽 STRETCH🍔☕️🍽////////////////////
